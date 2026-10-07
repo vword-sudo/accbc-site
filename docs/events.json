@@ -1,1 +1,17 @@
-{"month": "", "count": 0, "updated": "", "source": "", "events": [{"title": "Creative Entrepreneur Pitch Event", "date": "TBD", "time": "", "place": "GVSU Battle Creek Innovation Hub, 50 W Jackson St", "url": "", "ours": true}]}
+{
+  "month": "2026-10",
+  "count": 0,
+  "updated": "2026-10-07T17:18-04:00",
+  "source": "https://www.battlecreekvisitors.org/events/",
+  "calendar_ok": false,
+  "events": [
+    {
+      "title": "Creative Entrepreneur Pitch Event",
+      "date": "TBD",
+      "time": "",
+      "place": "GVSU Battle Creek Innovation Hub, 50 W Jackson St",
+      "url": "",
+      "ours": true
+    }
+  ]
+}
