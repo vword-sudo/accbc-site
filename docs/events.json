@@ -1,9 +1,9 @@
 {
   "month": "2026-10",
-  "count": 0,
-  "updated": "2026-10-07T17:18-04:00",
+  "count": 2,
+  "updated": "2026-10-07T18:25-04:00",
   "source": "https://www.battlecreekvisitors.org/events/",
-  "calendar_ok": false,
+  "calendar_ok": true,
   "events": [
     {
       "title": "Creative Entrepreneur Pitch Event",
@@ -12,6 +12,30 @@
       "place": "GVSU Battle Creek Innovation Hub, 50 W Jackson St",
       "url": "",
       "ours": true
+    },
+    {
+      "title": "What A Do Theatre Presents: Alice in Wonderland Jr.",
+      "date": "2026-10-15",
+      "time": "",
+      "place": "",
+      "url": "https://www.battlecreekvisitors.org/event/what-a-do-theatre-presents%3a-alice-in-wonderland-jr/1335/",
+      "ours": false
+    },
+    {
+      "title": "What A Do Theatre & Calhoun Christian Present: Anne of Green Gables",
+      "date": "2026-10-23",
+      "time": "",
+      "place": "",
+      "url": "https://www.battlecreekvisitors.org/event/what-a-do-theatre-%26-calhoun-christian-present%3a-anne-of-green-gables/1336/",
+      "ours": false
+    },
+    {
+      "title": "The Battle Creek Symphony Presents: Swinging Candlelight",
+      "date": "2026-11-07",
+      "time": "",
+      "place": "",
+      "url": "https://www.battlecreekvisitors.org/event/the-battle-creek-symphony-presents%3a-swinging-candlelight/1331/",
+      "ours": false
     }
   ]
 }
