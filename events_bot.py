@@ -12,9 +12,6 @@ Source: the Calhoun County Visitors Bureau events calendar
 (battlecreekvisitors.org), which runs on Simpleview. ACCBC's own events, and
 anything the calendar misses, go in my_events.json and are merged in.
 
-Uses only the Python standard library, so it runs anywhere Python 3.9+ does,
-including the free GitHub Actions runner in .github/workflows.
-
 Run it by hand:   python3 events_bot.py
 Preview only:     python3 events_bot.py --dry-run
 """
@@ -55,7 +52,11 @@ ARTS_ORGS = [
     "create in me art studio",
 ]
 
-HEADERS = {"User-Agent": "ACCBC-events-bot/1.0 (admin@artandculturebc.com)"}
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; ACCBC-events-bot/1.1; +https://artandculturebc.com)",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": SITE + "/events/",
+}
 
 
 def get(url):
@@ -139,14 +140,24 @@ def main():
     today = now.date()
     horizon = today + dt.timedelta(days=DAYS_AHEAD)
 
+    calendar_ok = True
     try:
         raw = fetch_events(iso_utc(now), iso_utc(now + dt.timedelta(days=DAYS_AHEAD)))
-    except Exception as e:  # keep the last saved list on the site if the source is down
-        print(f"Could not reach the events calendar: {e}", file=sys.stderr)
-        return 1
+    except Exception as e:
+        # Calendar is down or blocked: keep the calendar events we saved last time,
+        # and still add ACCBC's own events, so the site never goes blank.
+        print(f"WARNING: could not reach the events calendar: {e!r}")
+        calendar_ok, raw = False, []
 
     # One event can repeat on several days; keep its next date only.
     seen, upcoming = set(), []
+    if not calendar_ok and os.path.exists(OUT_FILE):
+        try:
+            with open(OUT_FILE) as f:
+                old = json.load(f).get("events", [])
+            upcoming = [e for e in old if not e.get("ours") and e.get("date", "") >= today.isoformat()]
+        except Exception:
+            upcoming = []
     for ev in raw:
         day = event_day(ev)
         key = ev.get("recid") or ev.get("title")
@@ -182,6 +193,7 @@ def main():
         "count": len(this_month),
         "updated": now.isoformat(timespec="minutes"),
         "source": SITE + "/events/",
+        "calendar_ok": calendar_ok,
         "events": upcoming,
     }
 
