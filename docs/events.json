@@ -1,7 +1,7 @@
 {
   "month": "2026-10",
-  "count": 2,
-  "updated": "2026-10-18T07:43-04:00",
+  "count": 1,
+  "updated": "2026-10-19T07:53-04:00",
   "source": "https://www.battlecreekvisitors.org/events/",
   "calendar_ok": true,
   "events": [
@@ -12,14 +12,6 @@
       "place": "GVSU Battle Creek Innovation Hub, 50 W Jackson St",
       "url": "",
       "ours": true
-    },
-    {
-      "title": "What A Do Theatre Presents: Alice in Wonderland Jr.",
-      "date": "2026-10-18",
-      "time": "",
-      "place": "",
-      "url": "https://www.battlecreekvisitors.org/event/what-a-do-theatre-presents%3a-alice-in-wonderland-jr/1335/",
-      "ours": false
     },
     {
       "title": "What A Do Theatre & Calhoun Christian Present: Anne of Green Gables",
