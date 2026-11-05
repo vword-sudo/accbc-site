@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "count": 1,
-  "updated": "2026-11-04T07:05-05:00",
+  "updated": "2026-11-05T07:11-05:00",
   "source": "https://www.battlecreekvisitors.org/events/",
   "calendar_ok": true,
   "events": [
@@ -19,6 +19,14 @@
       "time": "",
       "place": "",
       "url": "https://www.battlecreekvisitors.org/event/the-battle-creek-symphony-presents%3a-swinging-candlelight/1331/",
+      "ours": false
+    },
+    {
+      "title": "Cereal City Concert Band Presents: A Dazzling Christmas",
+      "date": "2026-12-06",
+      "time": "",
+      "place": "",
+      "url": "https://www.battlecreekvisitors.org/event/cereal-city-concert-band-presents%3a-a-dazzling-christmas/1382/",
       "ours": false
     }
   ]
