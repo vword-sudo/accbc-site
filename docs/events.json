@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
-  "count": 1,
-  "updated": "2026-11-07T06:54-05:00",
+  "count": 0,
+  "updated": "2026-11-08T12:07-05:00",
   "source": "https://www.battlecreekvisitors.org/events/",
   "calendar_ok": true,
   "events": [
@@ -12,14 +12,6 @@
       "place": "GVSU Battle Creek Innovation Hub, 50 W Jackson St",
       "url": "",
       "ours": true
-    },
-    {
-      "title": "The Battle Creek Symphony Presents: Swinging Candlelight",
-      "date": "2026-11-07",
-      "time": "",
-      "place": "",
-      "url": "https://www.battlecreekvisitors.org/event/the-battle-creek-symphony-presents%3a-swinging-candlelight/1331/",
-      "ours": false
     },
     {
       "title": "Cereal City Concert Band Presents: A Dazzling Christmas",
