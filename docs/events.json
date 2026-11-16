@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "count": 0,
-  "updated": "2026-11-15T12:48-05:00",
+  "updated": "2026-11-16T16:05-05:00",
   "source": "https://www.battlecreekvisitors.org/events/",
   "calendar_ok": true,
   "events": [
@@ -14,19 +14,19 @@
       "ours": true
     },
     {
+      "title": "Brass Band of Battle Creek Holiday Concert",
+      "date": "2026-12-05",
+      "time": "",
+      "place": "",
+      "url": "https://www.battlecreekvisitors.org/event/brass-band-of-battle-creek-holiday-concert/1397/",
+      "ours": false
+    },
+    {
       "title": "Cereal City Concert Band Presents: A Dazzling Christmas",
       "date": "2026-12-06",
       "time": "",
       "place": "",
       "url": "https://www.battlecreekvisitors.org/event/cereal-city-concert-band-presents%3a-a-dazzling-christmas/1382/",
-      "ours": false
-    },
-    {
-      "title": "The Battle Creek Symphony Presents A Christmas Carol",
-      "date": "2026-12-12",
-      "time": "",
-      "place": "",
-      "url": "https://www.battlecreekvisitors.org/event/the-battle-creek-symphony-presents-a-christmas-carol/1390/",
       "ours": false
     }
   ]
